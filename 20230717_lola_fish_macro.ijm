@@ -186,6 +186,14 @@ for (i = 0; i < list1.length; i++) {
 	
 }
 
+//Removes empty indices from arrays
+imgListIn = Array.trim(imgListIn, iterator);
+imgListOut = Array.trim(imgListOut, iterator);
+countArrayIn = Array.trim(countArrayIn, iterator);
+countArrayOut = Array.trim(countArrayOut, iterator);
+totAreaArrayIn = Array.trim(totAreaArrayIn, iterator);
+totAreaArrayOut = Array.trim(totAreaArrayOut, iterator);
+
 //create output tables
 Table.create("Overlap_Inside");
 Table.setColumn("Image", imgListIn);
